@@ -23,6 +23,7 @@ brew "openssh"
 brew "pinentry"
 brew "postgresql@17"
 brew "r"
+brew "ripgrep"
 brew "starship"
 brew "syncthing"
 brew "tmux"
@@ -37,7 +38,8 @@ brew "zsh"
 cask "1password"
 cask "1password-cli"
 cask "brave-browser"
-# cask "chatgpt"
+cask "chatgpt"
+cask "codex"
 # cask "cursor"
 # cask "datagrip"
 # cask "docker"
@@ -49,22 +51,20 @@ cask "kitty"
 # cask "notion"
 cask "orbstack"
 # cask "postico"
-# cask "postman"
-cask "protonvpn"
+cask "postman"
+# cask "protonvpn"
 # cask "rstudio"
 # cask "session-manager-plugin"
 # cask "slack"
 # cask "tableplus"
-# cask "visual-studio-code"
+cask "visual-studio-code"
 cask "vlc"
 cask "vscodium"
 # cask "zoom"
 cask "zotero"
 
 # mas "1password", id: 1333542190
-mas "1password for safari", id: 1569813296
 mas "bear", id: 1091189122
-mas "daisydisk", id: 411643860
-mas "keynote", id: 409183694
-mas "numbers", id: 409203825
-mas "pages", id: 409201541
+mas "yoink", id: 457622435
+mas "copilot", id: 1447330651
+mas "todoist", id: 585829637

@@ -113,16 +113,16 @@ fi
 # https://zsh.sourceforge.io/Doc/Release/Functions.html#Anonymous-Functions
 () {
   local editor
-  if type codium &>/dev/null; then
-    editor='codium --wait'
-  elif type cursor &>/dev/null; then
-    editor='cursor --wait'
-  elif type code &>/dev/null; then
+  if type code &>/dev/null; then
     editor='code --wait'
   elif type code-insiders &>/dev/null; then
     editor='code-insiders --wait'
   elif type code-exploration &>/dev/null; then
     editor='code-exploration --wait'
+  elif type codium &>/dev/null; then
+    editor='codium --wait'
+  elif type cursor &>/dev/null; then
+    editor='cursor --wait'
   else
     editor='vim'
   fi

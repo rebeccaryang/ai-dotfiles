@@ -1,6 +1,8 @@
 # Dotfiles
 
-Brendon Smith ([br3ndonland](https://github.com/br3ndonland))
+Forked from Brendon Smith ([br3ndonland](https://github.com/br3ndonland))
+
+Contributor guide: see [AGENTS.md](AGENTS.md).
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -178,9 +180,9 @@ For this reason, the [`.bash_profile`](.bash_profile) and [`.zprofile`](.zprofil
 
 ### VSCode desktop
 
-I write code with [VSCodium](https://github.com/VSCodium/vscodium), an alternate build of [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode) that is free of proprietary features and telemetry.
+I write code with [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode). I previously preferred [VSCodium](https://github.com/VSCodium/vscodium) to avoid telemetry, but the upstream release now ships with the defaults I need and integrates better with other tooling.
 
-VSCode settings, keybindings, and extension lists are stored in this repo. Extensions can be installed by running _[vscode-extensions.sh](scripts/vscode-extensions.sh)_ along with the editor command name, like `vscode-extensions.sh codium` for VSCodium. The script uses the [VSCode extension CLI](https://code.visualstudio.com/docs/editor/extension-gallery).
+VSCode settings, keybindings, and extension lists are stored in this repo. Extensions can be installed by running _[vscode-extensions.sh](scripts/vscode-extensions.sh)_ along with the editor command name, like `vscode-extensions.sh code` for VSCode (other builds such as VSCodium are still supported). The script uses the [VSCode extension CLI](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 VSCode offers other options for managing settings. The [`Shan.code-settings-sync`](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension was popular in the past, and stored settings in a GitHub Gist. [VSCode now offers a built-in settings sync feature](https://code.visualstudio.com/docs/editor/settings-sync) ([introduced in VSCode 1.48 July 2020](https://code.visualstudio.com/updates/v1_48)). This repo uses Git for settings sync instead of VSCode's settings sync feature. _Why not use VSCode settings sync?_
 

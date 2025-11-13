@@ -1,10 +1,13 @@
 cask_args appdir: "/Applications", require_sha: true
 
+brew "anthropic/claude/claude"
 brew "bash"
 brew "coreutils"
 brew "curl"
 brew "findutils"
+brew "fzf"
 brew "gawk"
+brew "gh"
 brew "git-lfs"
 brew "git"
 brew "gnu-getopt"
@@ -13,6 +16,7 @@ brew "gnu-tar"
 brew "gnupg"
 brew "grep"
 brew "libfido2"
+brew "jq"
 brew "mas" if OS.mac?
 brew "mise"
 brew "openssh"

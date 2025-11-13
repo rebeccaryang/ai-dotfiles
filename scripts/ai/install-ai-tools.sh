@@ -4,7 +4,7 @@
 set -e
 
 if ! command -v claude >/dev/null 2>&1; then
-  brew install claude
+  curl -sSf https://install.anthropic.com | sh
 fi
 
 if ! command -v gh >/dev/null 2>&1; then

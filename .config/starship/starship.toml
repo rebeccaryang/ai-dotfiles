@@ -604,3 +604,11 @@ pink = "#FF80BF"
 purple = "#9580FF"
 red = "#FF9580"
 yellow = "#FFFF80"
+
+add_newline = true
+
+[custom.ai]
+command = "echo 🤖"
+style = "bold green"
+when = "true"
+format = "[$output]($style) "

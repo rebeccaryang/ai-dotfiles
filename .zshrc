@@ -196,3 +196,18 @@ if [[ -d $HOMEBREW_PREFIX/share/zsh-syntax-highlighting ]]; then
 elif [[ -d $HOME/.zsh/zsh-syntax-highlighting ]]; then
   . $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+# AI config
+if [ -f "$HOME/.config/ai/config.env" ]; then
+  source "$HOME/.config/ai/config.env"
+fi
+
+# AI functions
+if [ -f "$HOME/scripts/ai/ai.sh" ]; then
+  source "$HOME/scripts/ai/ai.sh"
+fi
+
+# fzf + AI integration
+ai-fzf() {
+  git diff | fzf --preview 'bat --style=numbers --color=always --line-range :100 {}' | xargs ai
+}

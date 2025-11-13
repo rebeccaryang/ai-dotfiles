@@ -1,0 +1,5 @@
+[custom.ai]
+command = "echo 🤖"
+style = "bold green"
+when = "true"
+format = "[$output]($style)"
